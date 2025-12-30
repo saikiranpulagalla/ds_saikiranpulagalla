@@ -71,27 +71,23 @@ Recommendations"]
 
     C --> J["Output
 fear_greed_clean.csv"]
-
     D --> K["Output
 trades_clean.csv"]
-
     E --> L["Output
 merged_trades_sentiment.csv"]
-
     H --> M["Output
 4 PNG files"]
-
     I --> N["Output
 ds_report.pdf"]
 
-    style A fill:#e1f5ff
-    style E fill:#c8e6c9
-    style H fill:#fff9c4
-    style I fill:#f8bbd0
-    style N fill:#d1c4e9
+    %% High-contrast styles
+    style A fill:#e1f5ff,stroke:#0d47a1,stroke-width:2px,color:#000
+    style E fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px,color:#000
+    style H fill:#fff9c4,stroke:#f57f17,stroke-width:2px,color:#000
+    style I fill:#f8bbd0,stroke:#880e4f,stroke-width:2px,color:#000
+    style N fill:#d1c4e9,stroke:#311b92,stroke-width:2px,color:#000
 
 ```
-
 ---
 
 ## Setup Instructions
