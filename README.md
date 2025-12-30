@@ -35,26 +35,61 @@ ds_saikiranpulagalla/
 
 ```mermaid
 graph TD
-    A["Raw Datasets<br/>historical_data.csv<br/>fear_greed_index.csv"] --> B["Load Data<br/>211K trades<br/>2.6K sentiment records"]
-    B --> C["Clean Sentiment Data<br/>Convert timestamps<br/>Normalize classifications"]
-    C --> D["Clean Trade Data<br/>Convert timestamps<br/>Validate prices/sizes"]
-    D --> E["Merge Datasets<br/>Inner join on date<br/>184,263 records"]
-    E --> F["Aggregate Metrics<br/>Daily groupby sentiment<br/>Calculate 8 metrics"]
-    F --> G["Statistical Analysis<br/>T-tests for each metric<br/>Calculate p-values"]
-    G --> H["Generate Visualizations<br/>4 PNG charts<br/>200 DPI quality"]
-    H --> I["Create Report<br/>Findings<br/>Recommendations"]
-    
-    C --> J["Output: fear_greed_clean.csv"]
-    D --> K["Output: trades_clean.csv"]
-    E --> L["Output: merged_trades_sentiment.csv"]
-    H --> M["Output: 4 PNG files"]
-    I --> N["Output: ds_report.pdf"]
-    
+    A["Raw Datasets
+historical_data.csv
+fear_greed_index.csv"] --> B["Load Data
+211K trades
+2.6K sentiment records"]
+
+    B --> C["Clean Sentiment Data
+Convert timestamps
+Normalize classifications"]
+
+    C --> D["Clean Trade Data
+Convert timestamps
+Validate prices & sizes"]
+
+    D --> E["Merge Datasets
+Inner join on date
+184,263 records"]
+
+    E --> F["Aggregate Metrics
+Daily group by sentiment
+8 metrics calculated"]
+
+    F --> G["Statistical Analysis
+T-tests per metric
+p-value calculation"]
+
+    G --> H["Generate Visualizations
+4 PNG charts
+200 DPI quality"]
+
+    H --> I["Create Report
+Findings
+Recommendations"]
+
+    C --> J["Output
+fear_greed_clean.csv"]
+
+    D --> K["Output
+trades_clean.csv"]
+
+    E --> L["Output
+merged_trades_sentiment.csv"]
+
+    H --> M["Output
+4 PNG files"]
+
+    I --> N["Output
+ds_report.pdf"]
+
     style A fill:#e1f5ff
     style E fill:#c8e6c9
     style H fill:#fff9c4
     style I fill:#f8bbd0
     style N fill:#d1c4e9
+
 ```
 
 ---
